@@ -14,7 +14,7 @@
     width: 80vw;
     /* height: 80vh; */
     display: flex;
-    background: green;
+    background: hsl(150, 100%, 20%);
     color: white;
     text-align: center;
      flex-direction: column; 
@@ -25,7 +25,12 @@
     left: 50%;
     transform: translate(-50%, -50%); */
 }
-
+@media(max-width: 700px){
+    .container{
+       max-width: 100vh;
+       width: 100%;
+    }
+}
 h1{
     text-align: center;
     margin-bottom: 1.5rem;
@@ -51,7 +56,12 @@ input{
     padding: 0.7rem;
     text-align: center;
 }
-
+@media(max-width: 700px){
+    input{
+        max-width: 200px;
+        width: 100%
+    }
+}
 #btn{
     padding: 0.5rem 1rem;
     margin: auto;
@@ -66,14 +76,23 @@ caption{
     font-size: 20px;
 }
 table{
-    width: 80%;
+    width: 80opx;
     margin-bottom: 2rem;
     border-collapse: collapse;
 }
-
+@media(max-width: 700px){
+    table{
+        max-width: 150px;
+        width: 100%;
+    }
+}
 td, th{
     text-align: left;
     padding: 0.5rem; 
     border: 1px solid white;
 }
-
+@media(max-width: 700px){
+    /* td, th{
+        padding: 0.2rem;
+    } */
+}
